@@ -1,6 +1,37 @@
 @import "_vars.scss";
 @import "_global.scss";
 @import "_fonts.scss";
+// start dots
+.dots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  position: absolute;
+  width: 100px;
+  li {
+    background-color: $green;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    animation: dotsDance 3000ms ease-in-out infinite;
+  }
+}
+@keyframes dotsDance {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+// end dots
 
 // start header
 .header {
@@ -13,7 +44,8 @@
     right: 0;
     top: 0;
     background-color: #f5f4ec;
-    width: 100%;
+    opacity: 0.2;
+    width: 7000px;
     height: 900px;
     border-radius: 0 0 20% 70%;
     z-index: -1;
@@ -109,6 +141,7 @@
   @include f700;
 }
 .skins {
+  margin-bottom: 200px;
   &__container {
     max-width: 1200px;
     padding: 0 30px;
@@ -196,37 +229,116 @@
 }
 // end skins
 
-// start dots
-.dots {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 15px;
-  position: absolute;
-  width: 100px;
-  li {
-    background-color: $green;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    animation: dotsDance 3000ms ease-in-out infinite;
+// start advantages
+.advantages {
+  position: relative;
+  margin-bottom: 200px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -180px;
+    background-color: #f5f4ec;
+    opacity: 0.2;
+    max-width: 1200px;
+    width: 100%;
+    height: 800px;
+    border-radius: 0 80% 80% 50%;
+    z-index: -1;
+  }
+  .container {
+    max-width: 1920px;
+  }
+  &__title {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+  &__primary {
+    color: $green;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 18px;
+    color: $text;
+    @include f300;
+  }
+  &__dots {
+    right: 200px;
+    top: 0;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+    li {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  &__info {
+    max-width: 555px;
+    margin-left: -200px;
+  }
+  &__items {
+    margin-top: 120px;
+    &-left {
+    }
+    &-right {
+      margin-top: 200px;
+    }
+  }
+  &__item {
+    max-width: 475px;
+    width: 100%;
+    & + & {
+      margin-top: 60px;
+    }
+    &-image {
+      width: 60px;
+      margin-bottom: 50px;
+      margin-left: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: $green;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        z-index: -2;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        z-index: -1;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    &-title {
+      font-size: 20px;
+      color: $green;
+      @include f700;
+      margin-bottom: 10px;
+    }
+    &-text {
+      font-size: 13px;
+      color: $text;
+    }
   }
 }
-@keyframes dotsDance {
-  0% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
+// end advantages
+
+// start premium
+.premium {
 }
-// end dots
+// end premium
 
 // media
 @import "_media.scss";
