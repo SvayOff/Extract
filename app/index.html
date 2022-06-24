@@ -29,34 +29,20 @@
                             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                                 <ul class="header__menu navbar-nav">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="#skins">Скiни</a>
+                                        <a class="nav-link" data-bs-spy="scroll" href="#skins">Скiни</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link" href="#features">Особливостi</a>
+                                        <a class="nav-link" href="#advantages">Особливостi</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Вiдгуки</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Зв'язатися з нами</a>
+                                        <a class="nav-link" href="#footer">Зв'язатися з нами</a>
                                     </li>
                                 </ul>
                             </div>
                         </nav>
-                        <ul class="header__dots dots">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
                     </div>
                 </div>
             </header>
@@ -76,10 +62,24 @@
                             </h5>
                         </div>
                         <div class="col-12">
-                            <a class="logo__btn text-uppercase text-white" href="#">Buy Now</a>
+                            <a class="logo__btn btn text-uppercase text-white" href="#">Buy Now</a>
                         </div>
                     </div>
                 </div>
+                <ul class="header__dots dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </section>
 
             <section id="skins" class="skins">
@@ -120,7 +120,7 @@
                 </div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="skins__inner col-12">
+                        <div class="skins__inner .col-lg-4 col-xl-12">
 
                             <a href="#" class="skins__item mix category-all category-books text-center" data-order="1">
                                 <div class="skins__item-image"><img src="./images/skins/Books/books_skin_1.webp" alt=""></div>
@@ -260,7 +260,7 @@
                 </div>
             </section>
 
-            <section class="advantages">
+            <section id="advantages" class="advantages">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-10">
@@ -388,7 +388,7 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-end">
+                    <div class="premium__items row justify-content-end">
 
                         <div class="col-xl-5 col-sm-12">
                             <div class="premium__item">
@@ -537,12 +537,92 @@
 
         </div>
 
-        <footer class="footer">
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-10 col-12">
+                        <h2 class="footer__title text-center">Не прогавте шанс підкорити нові вершини</h2>
+                        <a class="footer__btn btn text-uppercase text-white" href="#">Buy Now</a>
+                        <div class="footer__primary primary">Подобається тема? Не забудьте оцінити його на п’ять зірок!</div>
+                        <button class="footer__star" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                                    <path fill="#59dfa5" d="M15.5 19c-0.082 0-0.164-0.020-0.239-0.061l-5.261-2.869-5.261 2.869c-0.168 0.092-0.373 0.079-0.529-0.032s-0.235-0.301-0.203-0.49l0.958-5.746-3.818-3.818c-0.132-0.132-0.18-0.328-0.123-0.506s0.209-0.31 0.394-0.341l5.749-0.958 2.386-4.772c0.085-0.169 0.258-0.276 0.447-0.276s0.363 0.107 0.447 0.276l2.386 4.772 5.749 0.958c0.185 0.031 0.337 0.162 0.394 0.341s0.010 0.374-0.123 0.506l-3.818 3.818 0.958 5.746c0.031 0.189-0.048 0.379-0.203 0.49-0.086 0.061-0.188 0.093-0.29 0.093zM10 15c0.082 0 0.165 0.020 0.239 0.061l4.599 2.508-0.831-4.987c-0.027-0.159 0.025-0.322 0.14-0.436l3.313-3.313-5.042-0.84c-0.158-0.026-0.293-0.127-0.365-0.27l-2.053-4.106-2.053 4.106c-0.072 0.143-0.207 0.243-0.365 0.27l-5.042 0.84 3.313 3.313c0.114 0.114 0.166 0.276 0.14 0.436l-0.831 4.987 4.599-2.508c0.075-0.041 0.157-0.061 0.239-0.061z"></path>
+                                </svg></span>
+                            <span>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                                    <path fill="#59dfa5" d="M15.5 19c-0.082 0-0.164-0.020-0.239-0.061l-5.261-2.869-5.261 2.869c-0.168 0.092-0.373 0.079-0.529-0.032s-0.235-0.301-0.203-0.49l0.958-5.746-3.818-3.818c-0.132-0.132-0.18-0.328-0.123-0.506s0.209-0.31 0.394-0.341l5.749-0.958 2.386-4.772c0.085-0.169 0.258-0.276 0.447-0.276s0.363 0.107 0.447 0.276l2.386 4.772 5.749 0.958c0.185 0.031 0.337 0.162 0.394 0.341s0.010 0.374-0.123 0.506l-3.818 3.818 0.958 5.746c0.031 0.189-0.048 0.379-0.203 0.49-0.086 0.061-0.188 0.093-0.29 0.093zM10 15c0.082 0 0.165 0.020 0.239 0.061l4.599 2.508-0.831-4.987c-0.027-0.159 0.025-0.322 0.14-0.436l3.313-3.313-5.042-0.84c-0.158-0.026-0.293-0.127-0.365-0.27l-2.053-4.106-2.053 4.106c-0.072 0.143-0.207 0.243-0.365 0.27l-5.042 0.84 3.313 3.313c0.114 0.114 0.166 0.276 0.14 0.436l-0.831 4.987 4.599-2.508c0.075-0.041 0.157-0.061 0.239-0.061z"></path>
+                                </svg></span>
+                            <span>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                                    <path fill="#59dfa5" d="M15.5 19c-0.082 0-0.164-0.020-0.239-0.061l-5.261-2.869-5.261 2.869c-0.168 0.092-0.373 0.079-0.529-0.032s-0.235-0.301-0.203-0.49l0.958-5.746-3.818-3.818c-0.132-0.132-0.18-0.328-0.123-0.506s0.209-0.31 0.394-0.341l5.749-0.958 2.386-4.772c0.085-0.169 0.258-0.276 0.447-0.276s0.363 0.107 0.447 0.276l2.386 4.772 5.749 0.958c0.185 0.031 0.337 0.162 0.394 0.341s0.010 0.374-0.123 0.506l-3.818 3.818 0.958 5.746c0.031 0.189-0.048 0.379-0.203 0.49-0.086 0.061-0.188 0.093-0.29 0.093zM10 15c0.082 0 0.165 0.020 0.239 0.061l4.599 2.508-0.831-4.987c-0.027-0.159 0.025-0.322 0.14-0.436l3.313-3.313-5.042-0.84c-0.158-0.026-0.293-0.127-0.365-0.27l-2.053-4.106-2.053 4.106c-0.072 0.143-0.207 0.243-0.365 0.27l-5.042 0.84 3.313 3.313c0.114 0.114 0.166 0.276 0.14 0.436l-0.831 4.987 4.599-2.508c0.075-0.041 0.157-0.061 0.239-0.061z"></path>
+                                </svg></span>
+                            <span>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                                    <path fill="#59dfa5" d="M15.5 19c-0.082 0-0.164-0.020-0.239-0.061l-5.261-2.869-5.261 2.869c-0.168 0.092-0.373 0.079-0.529-0.032s-0.235-0.301-0.203-0.49l0.958-5.746-3.818-3.818c-0.132-0.132-0.18-0.328-0.123-0.506s0.209-0.31 0.394-0.341l5.749-0.958 2.386-4.772c0.085-0.169 0.258-0.276 0.447-0.276s0.363 0.107 0.447 0.276l2.386 4.772 5.749 0.958c0.185 0.031 0.337 0.162 0.394 0.341s0.010 0.374-0.123 0.506l-3.818 3.818 0.958 5.746c0.031 0.189-0.048 0.379-0.203 0.49-0.086 0.061-0.188 0.093-0.29 0.093zM10 15c0.082 0 0.165 0.020 0.239 0.061l4.599 2.508-0.831-4.987c-0.027-0.159 0.025-0.322 0.14-0.436l3.313-3.313-5.042-0.84c-0.158-0.026-0.293-0.127-0.365-0.27l-2.053-4.106-2.053 4.106c-0.072 0.143-0.207 0.243-0.365 0.27l-5.042 0.84 3.313 3.313c0.114 0.114 0.166 0.276 0.14 0.436l-0.831 4.987 4.599-2.508c0.075-0.041 0.157-0.061 0.239-0.061z"></path>
+                                </svg></span>
+                            <span>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                                    <path fill="#59dfa5" d="M15.5 19c-0.082 0-0.164-0.020-0.239-0.061l-5.261-2.869-5.261 2.869c-0.168 0.092-0.373 0.079-0.529-0.032s-0.235-0.301-0.203-0.49l0.958-5.746-3.818-3.818c-0.132-0.132-0.18-0.328-0.123-0.506s0.209-0.31 0.394-0.341l5.749-0.958 2.386-4.772c0.085-0.169 0.258-0.276 0.447-0.276s0.363 0.107 0.447 0.276l2.386 4.772 5.749 0.958c0.185 0.031 0.337 0.162 0.394 0.341s0.010 0.374-0.123 0.506l-3.818 3.818 0.958 5.746c0.031 0.189-0.048 0.379-0.203 0.49-0.086 0.061-0.188 0.093-0.29 0.093zM10 15c0.082 0 0.165 0.020 0.239 0.061l4.599 2.508-0.831-4.987c-0.027-0.159 0.025-0.322 0.14-0.436l3.313-3.313-5.042-0.84c-0.158-0.026-0.293-0.127-0.365-0.27l-2.053-4.106-2.053 4.106c-0.072 0.143-0.207 0.243-0.365 0.27l-5.042 0.84 3.313 3.313c0.114 0.114 0.166 0.276 0.14 0.436l-0.831 4.987 4.599-2.508c0.075-0.041 0.157-0.061 0.239-0.061z"></path>
+                                </svg></span>
+                        </button>
+                        <p class="footer__text">Якщо у вас є коментарі чи пропозиції щодо Extract 2.0, надішліть нам електронний лист</p>
+                        <a class="footer__link" href="mailto: extract@gmail.com">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 20 20">
+                                <path fill="#59dfa5" d="M17.5 6h-16c-0.827 0-1.5 0.673-1.5 1.5v9c0 0.827 0.673 1.5 1.5 1.5h16c0.827 0 1.5-0.673 1.5-1.5v-9c0-0.827-0.673-1.5-1.5-1.5zM17.5 7c0.030 0 0.058 0.003 0.087 0.008l-7.532 5.021c-0.29 0.193-0.819 0.193-1.109 0l-7.532-5.021c0.028-0.005 0.057-0.008 0.087-0.008h16zM17.5 17h-16c-0.276 0-0.5-0.224-0.5-0.5v-8.566l7.391 4.927c0.311 0.207 0.71 0.311 1.109 0.311s0.798-0.104 1.109-0.311l7.391-4.927v8.566c0 0.276-0.224 0.5-0.5 0.5z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </footer>
 
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Хочете залишити вiдгук?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                                <path fill="#59dfa5" d="M10.707 10.5l5.646-5.646c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.646 5.646-5.646-5.646c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l5.646 5.646-5.646 5.646c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146l5.646-5.646 5.646 5.646c0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146c0.195-0.195 0.195-0.512 0-0.707l-5.646-5.646z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="modal__form">
+                            <label class="modal__form-name modal__form-label">
+                                Введiть ваше iм'я:
+                            </label>
+                            <input type="text" placeholder="Iм'я..." required>
+                            <label class="modal__form-comment modal__form-label">
+                                Напишiть про нас вiдгук:
+                            </label>
+                            <textarea placeholder="Вiдгук..." required></textarea>
+                            <label class="modal__form-star modal__form-label">Оцiнiть нас:</label>
+                            <div class="modal__rating">
+                                <div class="modal__rating-items">
+                                    <input id="modal__rating-5" class="modal__rating-item" type="radio" name="modal__rating" value="5">
+                                    <label class="modal__rating-label" for="modal__rating-5"></label>
+                                    <input id="modal__rating-4" class="modal__rating-item" type="radio" name="modal__rating" value="4">
+                                    <label class="modal__rating-label" for="modal__rating-4"></label>
+                                    <input id="modal__rating-3" class="modal__rating-item" type="radio" checked name="modal__rating" value="3">
+                                    <label class="modal__rating-label" for="modal__rating-3"></label>
+                                    <input id="modal__rating-2" class="modal__rating-item" type="radio" name="modal__rating" value="2">
+                                    <label class="modal__rating-label" for="modal__rating-2"></label>
+                                    <input id="modal__rating-1" class="modal__rating-item" type="radio" name="modal__rating" value="1">
+                                    <label class="modal__rating-label" for="modal__rating-1"></label>
+                                </div>
+                            </div>
+
+                            <button class="modal__btn" type="submit">Вiдправити</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>

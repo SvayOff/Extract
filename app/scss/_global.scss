@@ -1,6 +1,11 @@
 html {
     box-sizing: border-box;
 }
+*::selection {
+    background-color: #59dfa5;
+    color: #fff;
+}
+
 *,
 *::before,
 *::after {
